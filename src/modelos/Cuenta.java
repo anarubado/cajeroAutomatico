@@ -18,30 +18,37 @@ public class Cuenta {
     }
 
     public void setTipoDeCuenta(String tipoDeCuenta) {
+
         this.tipoDeCuenta = tipoDeCuenta;
     }
 
     public double getSaldo() {
+
         return saldo;
     }
 
     public void setSaldo(double saldo) {
+
         this.saldo = saldo;
     }
 
     public int getNumCuenta() {
+
         return numCuenta;
     }
 
     public void setNumCuenta(int numCuenta) {
+
         this.numCuenta = numCuenta;
     }
 
     public String getAlias() {
+
         return alias;
     }
 
     public void setAlias(String alias) {
+
         this.alias = alias;
     }
 

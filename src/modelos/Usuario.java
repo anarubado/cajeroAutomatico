@@ -17,51 +17,63 @@ public class Usuario {
         this.cuenta = cuenta;
     }
 
-    public String getNombre() {
+    public String getNombre()
+    {
         return nombre;
     }
 
     public void setNombre(String nombre) {
+
         this.nombre = nombre;
     }
 
     public String getApellido() {
+
         return apellido;
     }
 
     public void setApellido(String apellido) {
+
         this.apellido = apellido;
     }
 
     public int getDni() {
+
         return dni;
     }
 
     public void setDni(int dni) {
+
         this.dni = dni;
     }
 
     public String getMail() {
+
         return mail;
     }
 
     public void setMail(String mail) {
+
         this.mail = mail;
     }
 
     public String getPassword() {
+
         return password;
     }
 
     public void setPassword(String password) {
+
         this.password = password;
     }
 
     public Cuenta getCuenta() {
+
         return cuenta;
     }
 
     public void setCuenta(Cuenta cuenta) {
+
         this.cuenta = cuenta;
     }
 

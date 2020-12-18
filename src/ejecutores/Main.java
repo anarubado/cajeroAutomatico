@@ -7,6 +7,7 @@ import interfaces.Impementaciones.IBuscarCuentasImpl;
 import interfaces.Impementaciones.IOperacionesImpl;
 import interfaces.Impementaciones.IPoblarCuentasImpl;
 import modelos.Cuenta;
+import modelos.Usuario;
 
 import java.util.List;
 
@@ -29,6 +30,9 @@ public class Main {
 
     System.out.println("EXTRACCIÓN DE CUENTA 1: ");
     System.out.println(extraccionCuenta.extraccionDeCuenta(cuentas, 1, 500));
+
+    List<Usuario> usuarios= poblarcuentas.poblarUsuarios();
+        System.out.println(extraccionCuenta.extraccionUsuario(usuarios,34141900,"4567"));
 
     }
 
