@@ -1,25 +1,20 @@
 package modelos;
 
+import modelos.enums.TipoCuenta;
+
 public class Cuenta {
-    private String tipoDeCuenta;
+    private TipoCuenta tipoCuenta;
     private double saldo;
     private int numCuenta;
     private String alias;
 
-    public Cuenta(String tipoDeCuenta, double saldo, int numCuenta, String alias) {
-        this.tipoDeCuenta = tipoDeCuenta;
+    public Cuenta(TipoCuenta tipoCuenta, double saldo, int numCuenta, String alias) {
+        this.tipoCuenta = tipoCuenta;
         this.saldo = saldo;
         this.numCuenta = numCuenta;
         this.alias = alias;
     }
 
-    public String getTipoDeCuenta() {
-        return tipoDeCuenta;
-    }
-
-    public void setTipoDeCuenta(String tipoDeCuenta) {
-        this.tipoDeCuenta = tipoDeCuenta;
-    }
 
     public double getSaldo() {
         return saldo;
@@ -45,10 +40,18 @@ public class Cuenta {
         this.alias = alias;
     }
 
+    public TipoCuenta getTipoCuenta() {
+        return tipoCuenta;
+    }
+
+    public void setTipoCuenta(TipoCuenta tipoCuenta) {
+        this.tipoCuenta = tipoCuenta;
+    }
+
     @Override
     public String toString() {
         return "Cuenta{" +
-                "tipoDeCuenta='" + tipoDeCuenta + '\'' +
+                "tipoCuenta=" + tipoCuenta.name() +
                 ", saldo=" + saldo +
                 ", numCuenta=" + numCuenta +
                 ", alias='" + alias + '\'' +

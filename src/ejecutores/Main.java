@@ -7,6 +7,7 @@ import interfaces.Impementaciones.IBuscarCuentasImpl;
 import interfaces.Impementaciones.IOperacionesImpl;
 import interfaces.Impementaciones.IPoblarCuentasImpl;
 import modelos.Cuenta;
+import modelos.enums.TipoCuenta;
 
 import java.util.List;
 
@@ -29,6 +30,9 @@ public class Main {
 
     System.out.println("EXTRACCIÓN DE CUENTA 1: ");
     System.out.println(extraccionCuenta.extraccionDeCuenta(cuentas, 1, 500));
+
+    System.out.println("BÚSQUEDA POR TIPO DE CUENTA: CORRIENTE ");
+    System.out.println(buscarCuentas.buscarcuentaportipodecuenta(cuentas, TipoCuenta.CORRIENTE));
 
     }
 

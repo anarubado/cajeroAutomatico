@@ -3,6 +3,7 @@ package interfaces.Impementaciones;
 import interfaces.IPoblarCuentas;
 import modelos.Usuario;
 import modelos.Cuenta;
+import modelos.enums.TipoCuenta;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -30,10 +31,10 @@ public class IPoblarCuentasImpl implements IPoblarCuentas {
     @Override
     public List<Cuenta> poblarCuentas() {
         List<Cuenta> cuentas = new ArrayList<>();
-        Cuenta cuenta1 = new Cuenta("cta cte", 10000, 1, "bcappad");
-        Cuenta cuenta2 = new Cuenta("cta cte", 8000, 11, "aruado");
-        Cuenta cuenta3 = new Cuenta("caja ahorro", 12000, 111, "ravila");
-        Cuenta cuenta4 = new Cuenta("caja ahorro", 10000, 1111, "csimonelly");
+        Cuenta cuenta1 = new Cuenta(TipoCuenta.CORRIENTE, 10000, 1, "bcappad");
+        Cuenta cuenta2 = new Cuenta(TipoCuenta.AHORROS, 8000, 11, "aruado");
+        Cuenta cuenta3 = new Cuenta(TipoCuenta.AHORROS, 12000, 111, "ravila");
+        Cuenta cuenta4 = new Cuenta(TipoCuenta.CORRIENTE, 10000, 1111, "csimonelly");
 
         cuentas.add(cuenta1);
         cuentas.add(cuenta2);

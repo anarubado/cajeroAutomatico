@@ -1,6 +1,7 @@
 package interfaces.Impementaciones;
 
 import modelos.Cuenta;
+import modelos.enums.TipoCuenta;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -35,8 +36,16 @@ public class IBuscarCuentasImpl implements interfaces.IBuscarCuentas {
     }
 
     @Override
-    public List<Cuenta> buscarcuentaporsaldo(List<Cuenta> cuentas, int saldo) {
-        return null;
+    public List<Cuenta> buscarcuentaportipodecuenta(List <Cuenta> cuentas, TipoCuenta tipoCuenta) {
+        List<Cuenta> buscarcuentaportipodecuenta = new ArrayList<>();
+
+        for (Cuenta cuenta:cuentas) {
+            if (cuenta.getTipoCuenta().equals(tipoCuenta)) {
+                buscarcuentaportipodecuenta.add (cuenta);
+            }
+
+        }
+        return buscarcuentaportipodecuenta;
     }
 
     @Override
